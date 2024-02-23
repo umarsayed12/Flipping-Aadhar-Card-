@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(220, 175, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    perspective: 1000px;
+}
+.container{
+    position:relative;
+    width: 400px;
+    height: 250px;
+    margin-top: 220px;
+    transition: 1s;
+    transform-style: preserve-3d ;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+.container .card{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0 40px;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+header{
+    display: flex;
+}
+header .flag img{
+    width: 290px;
+    margin-left: 20px;
+}
+main{
+    display: flex;
+    margin-top: 15px;
+}
+main .image img{
+    width: 100px;
+    height: 130px;
+    border: 2px solid #000000;
+}
+main .detail{
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 1.4em;
+    font-family: monospace;
+    font-size: 16px;
+}
+.adhar_num{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+hr{
+    width: 439px;
+    margin-left: -20px;
+    margin-top: 8px;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3px;
+    font-family: monospace;
+
+}
+main .qr-code img{
+    width: 130px;
+    height: 130px;
+    margin-left: 50px;
+}
+main .detail2{
+    font-family: monospace;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+footer img{
+    width: 30px;
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.footer2 #foot{
+ display: flex;
+ height: 12px;
+ padding: 5px;
+}
+.footer2 #foot img{
+    height: 18px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+.footer2 #foot:nth-child(1){
+    border-right: 2px solid rgba(0,0,0,0.5);
+}
+.footer2 #foot:nth-child(2){
+    border-right: 2px solid rgba(0,0,0,0.5);
+}
+.card.back-face{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0 40px;
+    transform: rotateY(180deg);
+    
+}
